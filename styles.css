@@ -15,7 +15,7 @@ span{
 }
 
 tr[class="to-read"] span[class="status"] {
-    border: 2px solid black;
+    border: 2px solid rgb(252, 3, 3);
     border-radius: 15px;
     background-image: linear-gradient(red);
 }
