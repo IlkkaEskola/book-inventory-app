@@ -15,7 +15,34 @@ span{
 }
 
 tr[class="to-read"] span[class="status"] {
-    border: 2px solid rgb(252, 3, 3);
+    border: 2px solid rgb(255, 0, 0);
     border-radius: 15px;
-    background-image: linear-gradient(red);
+    background-image: linear-gradient(rgb(255, 0, 0));
+}
+
+tr[class="read"] span[class="status"] {
+    border: 2px solid rgb(32, 252, 3);
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(0, 255, 42));
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 2px solid rgb(252, 198, 3);
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(255, 196, 0));
+}
+
+span[class="status"], span[class^="rate"] {
+    width: 100px;   
+    height: 20px; 
+    padding: 5px;
+}
+
+span[class^="rate"] > span {
+    border: 1px solid #333;
+    border-radius: 50px;
+    margin: 2px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
 }
