@@ -1,3 +1,7 @@
+body{
+    text-align: center;
+}
+
 tr[class="read"]{
     background-image: linear-gradient(90deg, rgb(108, 244, 108), rgb(51, 188, 51));
 }
@@ -45,4 +49,16 @@ span[class^="rate"] > span {
     height: 15px;
     width: 15px;
     background-color: #eee;
+}
+
+span[class~="one"] > span:first-child {
+    background-image: linear-gradient(45deg, gold, gold);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+    background-image: linear-gradient(45deg, gold, gold);
+}
+
+span[class~="three"] > span {
+    background-image: linear-gradient(45deg, gold, gold);
 }
